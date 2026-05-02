@@ -1,0 +1,4 @@
+interface:
+  display_name: "Furusato Gift Finder"
+  short_description: "控除額内のふるさと納税返礼品をWeb検索で比較支援します"
+  default_prompt: "Use $furusato-gift-finder to find furusato tax return gifts within my donation budget."

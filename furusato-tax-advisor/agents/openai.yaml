@@ -1,0 +1,4 @@
+interface:
+  display_name: "Furusato Tax Advisor"
+  short_description: "ふるさと納税の上限額目安と返礼品比較相談を支援します"
+  default_prompt: "Use $furusato-tax-advisor to estimate my furusato tax donation limit and compare public return gift pages."
