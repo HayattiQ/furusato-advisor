@@ -1,60 +1,61 @@
-# Furusato Advisor Skills
+# ふるさと納税アドバイザー Skills
 
-Codex skills for Japanese furusato nozei planning.
+ふるさと納税の控除上限額のざっくり確認と、返礼品探しを支援する Codex Skills です。
 
-This repository contains two installable skills:
+このリポジトリには、次の2つの Skill が入っています。
 
-- `furusato-tax-advisor`: estimate a rough furusato nozei donation limit for salary earners and help compare public return gift pages.
-- `furusato-gift-finder`: search and compare public return gift pages when the user already has a donation budget or deduction limit.
+- `furusato-tax-advisor`: 給与所得者向けに、ふるさと納税の控除上限額をざっくり見積もり、必要に応じて公開されている返礼品ページの比較も支援します。
+- `furusato-gift-finder`: すでに寄付予算や控除上限額の目安がある場合に、公開ページを検索して返礼品候補を比較します。
 
-## Install
+## インストール
 
-Install both skills from this repository:
+リポジトリ内の Skill をまとめてインストールします。
 
 ```bash
 gh skill install HayattiQ/furusato-advisor
 ```
 
-Install one skill by path:
+個別にインストールしたい場合は、Skill のパスを指定します。
 
 ```bash
 gh skill install HayattiQ/furusato-advisor/furusato-tax-advisor
 gh skill install HayattiQ/furusato-advisor/furusato-gift-finder
 ```
 
-If your `gh` installation requires a full GitHub URL, use:
+利用環境によって GitHub URL の指定が必要な場合は、次の形式を使ってください。
 
 ```bash
 gh skill install https://github.com/HayattiQ/furusato-advisor
 ```
 
-## Usage
+## 使い方
 
-After installation, ask Codex in Japanese:
+インストール後、Codex に日本語で依頼します。
 
 ```text
 ざっくりふるさと納税の上限額を知りたい。給与年収700万円、共働き、小学生1人。
 ```
 
-Codex should use `furusato-tax-advisor` for rough donation-limit estimates.
+このような相談では、`furusato-tax-advisor` が給与年収や家族構成をもとに、控除上限額の簡易目安を出します。
 
-When you already know your budget, ask:
+すでに寄付予算や控除上限額の目安がある場合は、次のように依頼します。
 
 ```text
 ふるさと納税で5万円くらい使える。お肉の返礼品を5個くらい探して。
 ```
 
-Codex should use `furusato-gift-finder` to ask for needed preferences, search public pages, and compare a small shortlist.
+このような返礼品探しでは、`furusato-gift-finder` が必要な条件を確認し、公開されている返礼品ページを少数だけ確認して候補を比較します。
 
-## Notes
+## 注意事項
 
-- These skills provide planning and shopping assistance only.
-- They do not provide tax, legal, or financial advice.
-- Product data, donation amounts, stock, delivery dates, reviews, and application periods can change.
-- Always confirm current details on official product pages before donating.
-- The skills must not log in to user accounts, operate carts, submit donations, or handle private account data.
+- この Skill は、ふるさと納税の計画と返礼品選びを補助するためのものです。
+- 税務、法律、金融上の助言ではありません。
+- 控除上限額の見積もりは簡易目安です。住宅ローン控除、医療費控除、副業・事業所得、年金所得、iDeCo などがある場合はズレることがあります。
+- 返礼品の寄付金額、在庫、受付状況、配送時期、内容量、レビュー、申込期間などは変わることがあります。
+- 寄付前に、必ず公式ページや各ポータルサイトで最新情報を確認してください。
+- Skill はログイン、マイページ閲覧、カート操作、寄付申込、個人アカウント情報の取り扱いを行いません。
 
-## Included Skills
+## 含まれる Skill
 
 ```text
 furusato-advisor/
